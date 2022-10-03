@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "devfest-mlops"
+version = "0.1.0"
+description = ""
+authors = ["William Phetsinorath <william.phetsinorath@shikanime.studio>"]
+readme = "README.md"
+packages = [{include = "devfest_mlops"}]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+tfx = {extras = ["kfp"], version = "^1.9.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
